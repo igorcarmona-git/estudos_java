@@ -10,7 +10,7 @@ public class CadastroClientes {
     public List<Cliente> getListaClientes() {
         return listaClientes;
     }
-    
+
     //setters
     public void setListaClientes(List<Cliente> listaClientes) {
         this.listaClientes = listaClientes;
