@@ -1,6 +1,6 @@
 //Aplicando os conceitos de Sobrecarga de métodos
 
-package Aula8;
+package Aula8_SobrecargaMetodos;
 
 public class Calculadora {
     // ---------------------------> Operações de soma <--------------------------------

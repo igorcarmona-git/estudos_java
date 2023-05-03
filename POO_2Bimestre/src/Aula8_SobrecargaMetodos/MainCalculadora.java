@@ -1,6 +1,6 @@
 //Aplicando os conceitos de Sobrecarga de métodos
 
-package Aula8;
+package Aula8_SobrecargaMetodos;
 
 import java.util.Scanner;
 
@@ -11,7 +11,7 @@ public class MainCalculadora{
         double valor1, valor2, resultado;
         int operacao;
 
-        do {            
+        do { 
             System.out.print("Digite o primeiro valor: ");
             valor1 = input.nextDouble();
 

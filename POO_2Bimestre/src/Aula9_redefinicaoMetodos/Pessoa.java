@@ -1,6 +1,6 @@
 //Atividade sobre redefinição de métodos
 
-package Aula9;
+package Aula9_redefinicaoMetodos;
 
 public class Pessoa {
     String nome;
@@ -18,5 +18,5 @@ public class Pessoa {
        
         System.out.println(String.format("Parabéns, %s! Voce agora tem %d anos", this.nome, this.idade));
     }
-    
+   
 }
