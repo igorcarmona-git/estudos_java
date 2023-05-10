@@ -1,5 +1,6 @@
 //Aplicando os conceitos de Sobrecarga de métodos
 
+// Ao escolher uma função, a própria linguagem se encarregará de escolher o melhor parâmetro.
 package Aula8_SobrecargaMetodos;
 
 public class Calculadora {

@@ -9,17 +9,23 @@ public class Funcionario extends Pessoa {
         this.salario = salario;
     }
     
-    //método
-    public double aumentarSalario(double porcento){
-        
-// O modificador %.0f especifica que o número decimal deve ser formatado sem casas decimais, e o %% é usado para imprimir o símbolo de porcentagem literal na saída. 
-// Note que, se você quiser que o número seja formatado com uma quantidade específica de casas decimais, basta ajustar o valor numérico dentro do modificador %.nf (por exemplo, %.2f para 2 casas decimais).
+// Método
+public void aumentarSalario(double porcento) {
+    double aumento = porcento / 100;
 
-        double aumento = porcento * 0.01;
-        this.salario *=  aumento;
-        
-        return salario;
-    }
+    this.salario += this.salario * aumento;
+
+    System.out.printf("O salario de %s foi aumentado em %.0f%%. Novo salario: R$%.2f", this.nome, porcento, this.salario);
+}
+
+public void aumentarSalario(int porcento) {
+    double aumento = (double) porcento / 100; 
+
+    this.salario += this.salario * aumento;
+
+    System.out.printf("O salario de %s foi aumentado em %d%%. Novo salario: R$%.2f%n", this.nome, porcento, this.salario);
+}
+
     
     //Redefinindo um método
     @Override
@@ -29,7 +35,7 @@ public class Funcionario extends Pessoa {
         
         if(this.idade % 5 == 0){
             this.salario += bonus;
-            System.out.println(String.format("Parabéns, %s! Voce agora tem %d anos e ganhou um bonus de R$%f", this.nome,this.idade, bonus));
+            System.out.println(String.format("Parabens, %s! Voce agora tem %d anos e ganhou um bonus de R$%.2f", this.nome,this.idade, bonus));
         }
     }
     
