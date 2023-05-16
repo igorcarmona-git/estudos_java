@@ -3,12 +3,7 @@ package Aula10_polimorfismo;
 public class Carro extends Veiculo {
     @Override
     public void acelerar(){
-        int acelerar = 0;
-        int quantidade = 50;
-        
-        do {            
-            System.out.println(String.format("Voce esta a %d km/h de carro!", acelerar));
-            acelerar++;
-        } while (acelerar != quantidade);
+        acelerar += 20;
+        System.out.println(String.format("Voce esta a %d km/h de carro!", acelerar));
     }
 }
