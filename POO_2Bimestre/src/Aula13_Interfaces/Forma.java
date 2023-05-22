@@ -7,8 +7,8 @@
 package Aula13_Interfaces;
 
 public interface Forma {
-    double calcularArea();
-    double calcularPerimetro();
+    public double calcularArea();
+    public double calcularPerimetro();
     String getNome();
 
     // Constante

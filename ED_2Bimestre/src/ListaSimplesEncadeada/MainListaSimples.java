@@ -11,6 +11,7 @@ public class MainListaSimples {
         lista.adicionar(15);
         lista.adicionar(35);
         
+        System.out.println(lista.tamanho());
         lista.imprimir();
     }
     
