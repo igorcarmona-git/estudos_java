@@ -18,28 +18,26 @@ public class Elemento<TIPO> {
         this.direita = null;
     }
 
+    //getters
     public TIPO getValor() {
         return valor;
     }
-    
-    public void setValor(TIPO valor) {
-        this.valor = valor;
-    }
-
     public Elemento<TIPO> getEsquerda() {
         return esquerda;
     }
-
-    public void setEsquerda(Elemento<TIPO> esquerda) {
-        this.esquerda = esquerda;
-    }
-
     public Elemento<TIPO> getDireita() {
         return direita;
     }
-
+    
+    //setters
+    public void setValor(TIPO valor) {
+        this.valor = valor;
+    }
+    public void setEsquerda(Elemento<TIPO> esquerda) {
+        this.esquerda = esquerda;
+    }
     public void setDireita(Elemento<TIPO> direita) {
         this.direita = direita;
-    }
+    }  
     
 }
