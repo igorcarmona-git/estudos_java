@@ -54,4 +54,18 @@ public class DuplamenteEncadeada {
             tamanho--;
         }
     
+    public int getTamanho() {
+        return tamanho;
+    }
+    
+    public void imprimir() {
+        Node corrente = cabeca;
+        
+        while (corrente != null) {
+            System.out.print(corrente.data + " ");
+            corrente = corrente.next;
+        }
+        System.out.println();
+    }
+    
 }
