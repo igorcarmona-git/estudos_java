@@ -13,7 +13,7 @@ public class Executor {
         produtos.adicionarProduto(new Produto("Teclado", 30.00, "Serve pra digitar", 30, 1));
         produtos.adicionarProduto(new Produto("Mouse", 55.00, "Serve pra por a mao", 10, 2));
         
-        VendaDAO vendas = new VendaDAO();
+        VendaDAO vendas = new VendaDAO(); 
         
     }
 }

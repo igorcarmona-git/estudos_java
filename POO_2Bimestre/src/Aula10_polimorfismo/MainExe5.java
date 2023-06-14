@@ -8,7 +8,7 @@ public class MainExe5 {
         funcionario[1] = new Operador();
         
         for (Funcionario funcionarioi : funcionario) {
-            System.out.println(funcionarioi.getClass().getSimpleName()); //obtém o nome da classe do objeto e retorna o nome da classe sem o pacote com "geySimpleName()"
+            System.out.println(funcionarioi.getClass().getSimpleName()); //obtém o nome da classe do objeto e retorna o nome da classe sem o pacote com "getSimpleName()"
             System.out.println(String.format("R$%.2f", funcionarioi.calcularSalario()));
         }
     }
